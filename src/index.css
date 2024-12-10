@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0f172a, #1e1b4b);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+}
